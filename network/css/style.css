@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Gotham';
   src: url('fonts/GothamBold.ttf')  format('truetype');
-   font-weight: 700;
+   font-weight:5000;
    font-style: normal;
  }
 
@@ -402,16 +402,6 @@ color: #fff;
 #attributeselect .list a:hover {
 background-color: #fff;
 color: #000;
-}
-
-#attributeselect1 {
-margin: 20px 0 13px 0 ;
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
 }
 
 .link h2 {

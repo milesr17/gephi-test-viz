@@ -9,7 +9,7 @@
   },
   "text": {
     "more": "Audio Atlas",
-    "intro": "Audio Atlas",
+    "intro": "A network formed from connections between Spotify artists: Related Artists, Featured Artists and Genre Tags",
     "title": "Audio Atlas"
   },
   "legend": {
@@ -51,9 +51,5 @@
       "maxRatio": 20,
       "minRatio": 0.75
     }
-  },
-  "dependencies": {
-	  "express": "^4.17.1",
-	  "spotify-web-api-node": "^5.0.0"
   }
 }

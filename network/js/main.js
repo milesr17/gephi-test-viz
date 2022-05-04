@@ -102,9 +102,8 @@ function initSigma(config) {
 				a.clusters[b.attr.attributes["Modularity Class"]] || (a.clusters[b.attr.attributes["Modularity Class"]] = []);
 				a.clusters[b.attr.attributes["Modularity Class"]].push(b.id);//SAH: push id not label
 				
-				//a.subgenres[b.attr.attributes["Modularity Class"]] || (a.subgenres[b.attr.attributes["Modularity Class"]] = []);
-				//a.subgenres[b.attr.attributes["Modularity Class"]].push(b.id);//SAH: push id not label
-				console.log(a.clusters[10])
+
+				//console.log(a.clusters[10])
 				
 			}
 			
@@ -664,7 +663,7 @@ function showCluster(a) {
         sigInst.clusters[a] = e;
         sigInst.draw(2, 2, 2, 2);
         $GP.info_name.html("<b>" + a + "</b>");
-		console.log(a)
+		//console.log(a)
 		function myfunction(){
         $.ajax({
             url: "app.py",
@@ -674,6 +673,11 @@ function showCluster(a) {
         $GP.info_data.hide();
         $GP.info_p.html("Group Members:");
         $GP.info_link.find("ul").html(f.join(""));
+		console.log(f)
+		var obj = f;
+		var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj));
+
+		$('<a href="data:' + data + '" download="data.json">download JSON</a>').appendTo('#container');
         $GP.info.animate({width:'show'},350);
         $GP.search.clean();
 		$GP.cluster.hide();
